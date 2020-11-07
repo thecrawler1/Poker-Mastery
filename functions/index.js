@@ -135,7 +135,6 @@ exports.newSolution = functions.storage.object().onFinalize(async (object) => {
       columns
     }
   })
-  await bucket.file(filePath).delete()
 
   return fs.unlinkSync(tempFilePath)
 })

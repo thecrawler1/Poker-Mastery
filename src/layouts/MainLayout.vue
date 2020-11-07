@@ -29,7 +29,7 @@
           right: '2px',
           opacity: 0.25
         }"
-        style="height: 100%"
+        :style="'height: ' + ($q.screen.height - 50) + 'px'"
       >
         <template v-if="['index', 'new-solution'].includes($route.name)">
           <strategy-tree-viewer />
